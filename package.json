@@ -1,0 +1,35 @@
+{
+  "name": "kekstagram",
+  "version": "22.0.0",
+  "private": true,
+  "description": "Личный проект «{{projectTitle}}» от HTML Academy",
+  "repository": {
+    "type": "git",
+    "url": "{{sshUrl}}"
+  },
+  "bugs": {
+    "url": "{{bugsUrl}}"
+  },
+  "devDependencies": {
+    "browser-sync": "2.26.14",
+    "css-loader": "^6.8.1",
+    "eslint": "7.18.0",
+    "eslint-config-htmlacademy": "2.0.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "style-loader": "3.3.3",
+    "webpack": "5.24.2",
+    "webpack-cli": "4.5.0"
+  },
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "browser-sync start --server \"build/\" --no-ui --files \"source/**/*.js\"",
+    "test": "eslint js/"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "dependencies": {
+    "nouislider": "^15.7.1"
+  }
+}
